@@ -1,1 +1,294 @@
+<!DOCTYPE html>
 
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guia TechZen - Notebook do Mês</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" href="https://raw.githubusercontent.com/gittmau/techzen/refs/heads/main/img/z.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+darkMode: "class",
+theme: {
+extend: {
+"colors": {
+"on-primary": "#490080",
+"on-secondary-fixed-variant": "#6e208c",
+"error-container": "#93000a",
+"surface-container": "#171f33",
+"outline-variant": "#4d4354",
+"tertiary-container": "#b47cc6",
+"surface-container-highest": "#2d3449",
+"background": "#0b1326",
+"surface-container-high": "#222a3d",
+"secondary-fixed": "#f9d8ff",
+"on-error-container": "#ffdad6",
+"on-tertiary-container": "#431156",
+"primary-container": "#b76dff",
+"primary-fixed-dim": "#ddb7ff",
+"inverse-surface": "#dae2fd",
+"secondary-fixed-dim": "#edb1ff",
+"error": "#ffb4ab",
+"inverse-primary": "#842bd2",
+"tertiary-fixed": "#f9d8ff",
+"on-primary-container": "#400071",
+"inverse-on-surface": "#283044",
+"on-tertiary-fixed": "#320046",
+"surface-container-low": "#131b2e",
+"tertiary-fixed-dim": "#edb1ff",
+"on-error": "#690005",
+"on-primary-fixed-variant": "#6900b3",
+"primary-fixed": "#f0dbff",
+"on-background": "#dae2fd",
+"on-secondary-container": "#e498ff",
+"surface-tint": "#ddb7ff",
+"on-tertiary-fixed-variant": "#633276",
+"on-secondary-fixed": "#320046",
+"surface": "#0b1326",
+"on-surface": "#dae2fd",
+"outline": "#988d9f",
+"on-tertiary": "#4a1a5d",
+"on-primary-fixed": "#2c0051",
+"surface-bright": "#31394d",
+"tertiary": "#edb1ff",
+"secondary-container": "#6e208c",
+"surface-dim": "#0b1326",
+"on-secondary": "#520070",
+"secondary": "#edb1ff",
+"primary": "#ddb7ff",
+"surface-variant": "#2d3449",
+"surface-container-lowest": "#060e20",
+"on-surface-variant": "#cfc2d6"
+},
+"borderRadius": {
+"DEFAULT": "0.25rem",
+"lg": "0.5rem",
+"xl": "0.75rem",
+"full": "9999px"
+},
+"spacing": {
+"unit": "8px",
+"stack-md": "16px",
+"container-max": "1280px",
+"gutter": "24px",
+"stack-sm": "8px",
+"stack-lg": "32px",
+"margin-x": "32px"
+},
+"fontFamily": {
+"label-sm": ["Inter", "Arial", "sans-serif"],
+"h2": ["Space Grotesk", "Arial", "sans-serif"],
+"h3": ["Space Grotesk", "Arial", "sans-serif"],
+"h1": ["Space Grotesk", "Arial", "sans-serif"],
+"body-md": ["Inter", "Arial", "sans-serif"],
+"body-lg": ["Inter", "Arial", "sans-serif"]
+},
+"fontSize": {
+"label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+"h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+"h3": ["24px", {"lineHeight": "1.3", "letterSpacing": "0em", "fontWeight": "600"}],
+"h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+"body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400"}],
+"body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}]
+}
+},
+},
+}
+</script>
+<style>
+.material-symbols-outlined {
+font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+@media screen and (max-width: 600px) {
+.mobile-stack {
+display: block !important;
+width: 100% !important;
+}
+.mobile-padding {
+padding-left: 16px !important;
+padding-right: 16px !important;
+}
+}
+</style>
+</head>
+<body class="bg-background text-on-surface m-0 p-0 font-body-md text-body-md">
+<!-- Email Wrapper -->
+<table border="0" cellpadding="0" cellspacing="0" class="bg-background" style="background-color: #0b1326;" width="100%">
+<tbody>
+<tr>
+<td align="center" style="padding: 20px 0;">
+<!-- Main Content Container -->
+<table border="0" cellpadding="0" cellspacing="0" class="max-w-[600px] w-full" style="max-width: 600px;" width="600">
+<!-- TopAppBar / Header -->
+<tbody>
+<tr>
+<td align="center" class="bg-surface/60 backdrop-blur-xl border-b border-outline-variant/30 py-stack-md" style="padding: 16px 32px; border-bottom: 1px solid rgba(77, 67, 84, 0.3);">
+<img alt="Guia TechZen Logo" height="48" src="https://raw.githubusercontent.com/gittmau/techzen/refs/heads/main/img/z.png" style="display: block; margin-bottom: 8px;" width="48"/>
+<h1 class="font-h2 text-h2 font-bold tracking-tight text-primary uppercase m-0" style="color: #ddb7ff; font-family: 'Space Grotesk', Arial, sans-serif; font-size: 24px; margin: 0;">Guia TechZen</h1>
+</td>
+</tr>
+<tr>
+<td align="center" class="bg-surface-container-low" style="padding: 40px 32px 0 32px; background-color: #131b2e;">
+<div style="max-width: 480px;">
+<h2 class="font-h3" style="font-family: 'Space Grotesk', Arial, sans-serif; color: #ffffff; font-size: 20px; line-height: 1.4; margin: 0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
+Bem-vindo à <span style="color: #a855f7;">vanguarda</span> da tecnologia.
+</h2>
+<div style="height: 2px; width: 40px; background-color: #a855f7; margin: 16px auto;"></div>
+<p class="font-body-md" style="font-family: 'Inter', Arial, sans-serif; color: #cfc2d6; font-size: 16px; margin: 0; line-height: 1.5;">
+Onde a performance encontra a sofisticação.
+</p>
+</div>
+</td>
+</tr>
+<!-- Hero Section -->
+<!-- Product List Section (Single Column) -->
+<tr>
+<td class="bg-surface-container-low p-margin-x" style="padding: 32px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="center">
+<div class="inline-block bg-primary/10 border border-primary/20 rounded-full px-4 py-1 mb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase" style="color: #ddb7ff;">Melhores Notebooks</span>
+</div>
+<h2 class="font-h1 text-h1 text-on-surface mb-stack-md" style="font-family: 'Space Grotesk', Arial, sans-serif; color: #dae2fd; margin-bottom: 16px; font-size: 32px;">MacBook Air M1 (2020)</h2>
+<img alt="Notebook do Mês" class="rounded-xl shadow-[0_0_30px_rgba(168,85,247,0.2)] mb-stack-lg" data-alt="A high-end, sleek professional laptop featuring a minimalist design with a magnesium alloy chassis. The laptop is positioned on a polished dark surface with purple ambient lighting reflecting off its edges, creating a futuristic and premium tech aesthetic. The background is softly blurred with deep obsidian tones and neon violet accents, emphasizing performance and technical authority." src="https://raw.githubusercontent.com/gittmau/techzen/refs/heads/main/img/mac-book.png" style="display: block; width: 100%; height: auto; border-radius: 12px; margin-bottom: 32px; border: 1px solid #334155;" width="536"/>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg" style="color: #cfc2d6; margin-bottom: 32px; font-family: 'Inter', Arial, sans-serif;">
+A melhor porta de entrada para o ecossistema Apple. Comprando modelos recondicionados certificados, você garante performance de elite por quase metade do preço de um novo.
+</p>
+<!-- CTA Button -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" bgcolor="#a855f7" style="border-radius: 8px;">
+<a href="https://meli.la/2SfFRfP" target="_blank" rel="sponsored" style="font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 16px 32px; display: inline-block; border-radius: 8px; box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);">
+VER OFERTA
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+<tr>
+<td class="bg-surface-container-low p-margin-x" style="padding: 32px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="center">
+<div class="inline-block bg-primary/10 border border-primary/20 rounded-full px-4 py-1 mb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase" style="color: #ddb7ff;">Seu Notebook é aqui</span>
+</div>
+<h2 class="font-h1 text-h1 text-on-surface mb-stack-md" style="font-family: 'Space Grotesk', Arial, sans-serif; color: #dae2fd; margin-bottom: 16px; font-size: 32px;">Lenovo Ideapad 3</h2>
+<img alt="Notebook do Mês" class="rounded-xl shadow-[0_0_30px_rgba(168,85,247,0.2)] mb-stack-lg" data-alt="A high-end, sleek professional laptop featuring a minimalist design with a magnesium alloy chassis. The laptop is positioned on a polished dark surface with purple ambient lighting reflecting off its edges, creating a futuristic and premium tech aesthetic. The background is softly blurred with deep obsidian tones and neon violet accents, emphasizing performance and technical authority." src="https://guiatechzen.com.br/img/img3.png" style="display: block; width: 100%; height: auto; border-radius: 12px; margin-bottom: 32px; border: 1px solid #334155;" width="536"/>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg" style="color: #cfc2d6; margin-bottom: 32px; font-family: 'Inter', Arial, sans-serif;">
+O notebook que dominou as pesquisas esta semana. Performance sólida para estudos e trabalho com o melhor preço que encontramos hoje no Mercado Livre.
+</p>
+<!-- CTA Button -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" bgcolor="#a855f7" style="border-radius: 8px;">
+<a href="https://meli.la/1ZRCQ8z" target="_blank" rel="sponsored" style="font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 16px 32px; display: inline-block; border-radius: 8px; box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);">
+VER DETALHES DA OFERTA
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td class="bg-surface-container-low p-margin-x" style="padding: 32px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td align="center">
+<div class="inline-block bg-primary/10 border border-primary/20 rounded-full px-4 py-1 mb-4">
+<span class="font-label-sm text-label-sm text-primary uppercase" style="color: #ddb7ff;">Escolha o seu Notebook</span>
+</div>
+<h2 class="font-h1 text-h1 text-on-surface mb-stack-md" style="font-family: 'Space Grotesk', Arial, sans-serif; color: #dae2fd; margin-bottom: 16px; font-size: 32px;">Acer Aspire A16</h2>
+<img alt="Notebook do Mês" class="rounded-xl shadow-[0_0_30px_rgba(168,85,247,0.2)] mb-stack-lg" data-alt="A high-end, sleek professional laptop featuring a minimalist design with a magnesium alloy chassis. The laptop is positioned on a polished dark surface with purple ambient lighting reflecting off its edges, creating a futuristic and premium tech aesthetic. The background is softly blurred with deep obsidian tones and neon violet accents, emphasizing performance and technical authority." src="https://guiatechzen.com.br/img/img11.png" style="display: block; width: 100%; height: auto; border-radius: 12px; margin-bottom: 32px; border: 1px solid #334155;" width="536"/>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg" style="color: #cfc2d6; margin-bottom: 32px; font-family: 'Inter', Arial, sans-serif;">
+Se é desempenho que você quer, o Apire Pode superar suas expectativas garantindo velocidade e eficiências nas tarefas cotidianas.
+</p>
+<!-- CTA Button -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" bgcolor="#a855f7" style="border-radius: 8px;">
+<a href="https://meli.la/2Bw7j4a" target="_blank" rel="sponsored" style="font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: bold; color: #ffffff; text-decoration: none; padding: 16px 32px; display: inline-block; border-radius: 8px; box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);">
+VER DETALHES DA OFERTA
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+
+<!-- Footer -->
+<tr>
+<td align="center" class="bg-surface-container-lowest border-t border-outline-variant/20 py-stack-lg px-margin-x" style="background-color: #060e20; border-top: 1px solid rgba(77, 67, 84, 0.2); padding: 48px 32px;">
+<h4 class="font-h3 text-h3 font-bold text-on-surface mb-4" style="font-family: 'Space Grotesk', Arial, sans-serif; color: #dae2fd; margin: 0 0 16px 0;">Guia TechZen</h4>
+<!-- Social Links -->
+<table border="0" cellpadding="0" cellspacing="0" class="mb-stack-md" style="margin-bottom: 24px;">
+<tbody>
+<tr>
+<td style="padding: 0 8px;">
+<img src="https://raw.githubusercontent.com/gittmau/images/refs/heads/main/cabo.png" width ="24px" alt="cabo"></td>
+<td style="padding: 0 8px;">
+<img src="https://raw.githubusercontent.com/gittmau/images/refs/heads/main/mouse-de-computador.png" width="24px" alt="mouse">
+</td>
+<td style="padding: 0 8px;">
+<img src="https://raw.githubusercontent.com/gittmau/images/refs/heads/main/design-responsivo.png" width="24px" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p class="font-body-md text-on-surface-variant mb-2" style="font-size: 14px; color: #cfc2d6; margin: 0 0 8px 0;">guiatechzen.com.br</p>
+<p class="font-label-sm text-on-surface-variant mb-6" style="font-size: 12px; color: #cfc2d6; line-height: 1.6; margin: 0 0 24px 0;">
+© 2026 Guia TechZen. Autoridade Técnica.<br/>
+Vila Curuçá - São Paulo, SP.
+</p>
+<!-- Legal Links -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="px-2" style="padding: 0 10px;">
+<a class="font-label-sm text-on-surface-variant underline" href="https://guiatechzen.com.br/privacidade.html" style="font-size: 11px; color: #cfc2d6;">Privacidade</a>
+</td>
+<td class="px-2" style="padding: 0 10px;">
+<a class="font-label-sm text-on-surface-variant underline" href="https://guiatechzen.com.br/privacidade.html" style="font-size: 11px; color: #cfc2d6;">Termos</a>
+</td>
+<td class="px-2" style="padding: 0 10px;">
+<a class="font-label-sm text-on-surface-variant underline" href="https://guiatechzen.com.br" style="font-size: 11px; color: #cfc2d6;">Site</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body></html>
